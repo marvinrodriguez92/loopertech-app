@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Portfolio from './components/Portafolio';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+/**
+ * Componente principal que maneja las rutas de la aplicación.
+ * @returns {JSX.Element} La estructura JSX que se renderiza en la aplicación.
+ */
+const App = () => {
+    return (
+        <Router>
+            <div className="App">
+                {/* Define las rutas y los componentes correspondientes */}
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/portafolio" element={<Portfolio />} />
+                </Routes>
+            </div>
+        </Router>
+    );
+};
 
 export default App;

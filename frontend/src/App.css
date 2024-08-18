@@ -1,7 +1,8 @@
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding: 20px;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +36,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.home {
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.portfolio {
+  background-color: #e6e6fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #4CAF50;
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
 }
